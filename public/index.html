@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <meta name="theme-color" content="#1eb06d" />
+
+    <title>Sample Nexwidget App</title>
+
+    <link rel="preload" href="/index.css" as="style" />
+
+    <link
+      rel="preload"
+      href="https://unpkg.com/construct-style-sheets-polyfill"
+      as="script"
+      crossorigin
+    />
+
+    <link rel="preload" href="/build/index.js" as="script" crossorigin />
+    <link rel="preload" href="/assets/profile.jpg" as="image" />
+
+    <link rel="icon" href="/assets/icon-x48.png" />
+    <link rel="apple-touch-icon" href="/assets/favicon.png" />
+
+    <link rel="stylesheet" href="/index.css" media="all" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "lit-html/": "https://unpkg.com/lit-html@2.1.1/",
+          "nexwidget/": "https://unpkg.com/nexwidget@7.0.1/dist/"
+        },
+        "scopes": {
+          "https://unpkg.com/nexwidget@7.0.1/dist/": {
+            "lit-html/": "https://unpkg.com/lit-html@2.1.1/",
+            "nexbounce/": "https://unpkg.com/nexbounce@7.0.1/dist/"
+          }
+        }
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/construct-style-sheets-polyfill"
+    ></script>
+
+    <script type="module" src="/build/index.js"></script>
+  </head>
+  <body>
+    <noscript>Please enable JavaScript.</noscript>
+    <app-provider></app-provider>
+  </body>
+</html>
