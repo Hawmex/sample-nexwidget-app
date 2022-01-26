@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/Hawmex/sample-nexwidget-app#readme",
   "dependencies": {
-    "lit-html": "^2.1.1",
-    "nexwidget": "^7.0.1"
+    "lit-html": "^2.1.2",
+    "nexwidget": "^7.0.2"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
